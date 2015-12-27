@@ -1,0 +1,31 @@
+* {
+  box-sizing: content-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  color: #fff;
+  font-weight: 100;
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+}
+
+.title .avatar {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/avatar.jpg);
+  display: inline-block;
+  border-radius: 50%;
+  background-size: 100%;
+}
