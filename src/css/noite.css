@@ -1,5 +1,6 @@
 .noite {
-  background: -webkit-linear-gradient(top, rgb(2, 13, 39) 50%, rgb(8, 28, 78)80%, rgb(22, 0, 107));
+  /*background: -webkit-linear-gradient(top, rgb(2, 13, 39) 50%, rgb(8, 28, 78)80%, rgb(22, 0, 107));*/
+  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
   width: 100%;
   height: 100%;
   position: absolute;
@@ -12,18 +13,19 @@
   top: 0;
   width: 100%;
   height: 100%;
+  animation: rotate 600s infinite linear;
 }
 
 /*.escurecer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: -webkit-linear-gradient(top, rgba(56, 10, 204, 0), rgba(56, 10, 204, 0.4));
-  animation-name: escurecer;
-  animation-duration: 60s;
-  animation-timing-function: linear;
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+background-image: -webkit-linear-gradient(top, rgba(56, 10, 204, 0), rgba(56, 10, 204, 0.4));
+animation-name: escurecer;
+animation-duration: 60s;
+animation-timing-function: linear;
 }*/
 
 .estrela {
@@ -81,32 +83,61 @@
 .meteoro.style4 { animation-name: meteoroStyle4; }
 
 .lua {
-    position: absolute;
-    right: 200px;
-    top: 150px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    background-color: #fff;
-    animation-name: lua;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  background-color: #fff;
+  animation-name: lua;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
 }
 
 .lua .textura {
-    background-image: url(../img/bgMoon.png);
-    background-position: center;
+  background-image: url(../img/bgMoon.png);
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+/*.nuvens {
+  left: 0;
+  bottom: 120px;
+  width: 5000%;
+  position: absolute;
+  height: 300px;
+  opacity: 0.1;
+}
+
+.nuvens .nuvem-a {
+    background-image: url(http://montanaflynn.me/lab/css-clouds/images/cloud_one.png);
     background-size: 100%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    overflow: hidden;
-    opacity: 0.4;
+    background-repeat: no-repeat;
+}*/
+
+.floresta {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.floresta img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @keyframes escurecer {
@@ -143,10 +174,6 @@
     background-color: #FFFFFF;
     box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
   }
-}
-
-@keyframes escurecerEstrelas {
-
 }
 
 @keyframes meteoroStyle1 {
@@ -186,5 +213,14 @@
   }
   100% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
