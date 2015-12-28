@@ -1,5 +1,4 @@
 .noite {
-  /*background: -webkit-linear-gradient(top, rgb(2, 13, 39) 50%, rgb(8, 28, 78)80%, rgb(22, 0, 107));*/
   background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
   width: 100%;
   height: 100%;
@@ -15,18 +14,6 @@
   height: 100%;
   animation: rotate 600s infinite linear;
 }
-
-/*.escurecer {
-width: 100%;
-height: 100%;
-position: absolute;
-left: 0;
-top: 0;
-background-image: -webkit-linear-gradient(top, rgba(56, 10, 204, 0), rgba(56, 10, 204, 0.4));
-animation-name: escurecer;
-animation-duration: 60s;
-animation-timing-function: linear;
-}*/
 
 .estrela {
   background-color: white;
@@ -110,21 +97,6 @@ animation-timing-function: linear;
   overflow: hidden;
   opacity: 0.4;
 }
-
-/*.nuvens {
-  left: 0;
-  bottom: 120px;
-  width: 5000%;
-  position: absolute;
-  height: 300px;
-  opacity: 0.1;
-}
-
-.nuvens .nuvem-a {
-    background-image: url(http://montanaflynn.me/lab/css-clouds/images/cloud_one.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}*/
 
 .floresta {
   position: fixed;
